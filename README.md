@@ -15,13 +15,16 @@ It depends on [frees-rpc](https://github.com/frees-io/freestyle-rpc).
 
 Add the following line to `project/plugins.sbt`:
 
+
 [comment]: # (Start Replace)
 
 ```scala
-addSbtPlugin("io.frees" % "sbt-frees-protogen" % "0.0.1-SNAPSHOT")
+addSbtPlugin("io.frees" % "sbt-frees-protogen" % "0.0.1")
 ```
 
 [comment]: # (End Replace)
+
+By default, this plugin will inject `frees-rpc` dependency.
 
 ## Demo
 
