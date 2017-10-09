@@ -1,7 +1,7 @@
 
 [comment]: # (Start Badges)
 
-[![Build Status](https://travis-ci.org/frees-io/sbt-frees-protogen.svg?branch=master)](https://travis-ci.org/frees-io/sbt-frees-protogen) [![codecov.io](http://codecov.io/github/frees-io/sbt-frees-protogen/coverage.svg?branch=master)](http://codecov.io/github/frees-io/sbt-frees-protogen?branch=master) [![Maven Central](https://img.shields.io/badge/maven%20central-0.0.1-green.svg)](https://repo1.maven.org/maven2/io/frees/freestyle_2.12_1.0) [![Latest version](https://img.shields.io/badge/sbt--frees--protogen-0.0.1-green.svg)](https://index.scala-lang.org/frees-io/sbt-frees-protogen) [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/frees-io/sbt-frees-protogen/master/LICENSE) [![Join the chat at https://gitter.im/47deg/freestyle](https://badges.gitter.im/47deg/freestyle.svg)](https://gitter.im/47deg/freestyle?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![GitHub Issues](https://img.shields.io/github/issues/frees-io/sbt-frees-protogen.svg)](https://github.com/frees-io/sbt-frees-protogen/issues) [![Scala.js](http://scala-js.org/assets/badges/scalajs-0.6.20.svg)](http://scala-js.org)
+[![Build Status](https://travis-ci.org/frees-io/sbt-frees-protogen.svg?branch=master)](https://travis-ci.org/frees-io/sbt-frees-protogen) [![Latest version](https://img.shields.io/badge/sbt--frees--protogen-0.0.2-green.svg)](https://index.scala-lang.org/frees-io/sbt-frees-protogen) [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/frees-io/sbt-frees-protogen/master/LICENSE) [![Join the chat at https://gitter.im/47deg/freestyle](https://badges.gitter.im/47deg/freestyle.svg)](https://gitter.im/47deg/freestyle?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![GitHub Issues](https://img.shields.io/github/issues/frees-io/sbt-frees-protogen.svg)](https://github.com/frees-io/sbt-frees-protogen/issues)
 
 [comment]: # (End Badges)
 
@@ -19,7 +19,7 @@ Add the following line to `project/plugins.sbt`:
 [comment]: # (Start Replace)
 
 ```scala
-addSbtPlugin("io.frees" % "sbt-frees-protogen" % "0.0.1")
+addSbtPlugin("io.frees" % "sbt-frees-protogen" % "0.0.2")
 ```
 
 [comment]: # (End Replace)
