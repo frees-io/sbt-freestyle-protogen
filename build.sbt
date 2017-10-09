@@ -15,7 +15,6 @@ lazy val plugin = project
   .in(file("plugin"))
   .dependsOn(core)
   .settings(sbtPlugin := true)
-  .settings(crossScalaVersions := Seq(sbtorgpolicies.model.scalac.`2.12`))
   .settings(scalacOptions := Seq("-deprecation", "-encoding", "UTF-8", "-feature", "-unchecked"))
   .settings(
     orgBadgeListSetting := List(
@@ -31,6 +30,5 @@ lazy val plugin = project
 lazy val core = project
   .in(file("core"))
   .settings(moduleName := "frees-protogen-core")
-  .settings(crossScalaVersions := Seq(sbtorgpolicies.model.scalac.`2.12`))
   .settings(scalaMetaSettings: _*)
   .settings(libraryDependencies += "io.frees" %% "frees-rpc" % "0.0.3")
