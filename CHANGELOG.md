@@ -1,5 +1,12 @@
 # Changelog
 
+## 10/09/2017 - Version 0.0.4
+
+Release changes:
+
+* Releasing 0.0.4
+
+
 ## 10/09/2017 - Version 0.0.3
 
 Release changes:
