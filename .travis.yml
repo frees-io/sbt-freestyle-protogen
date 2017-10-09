@@ -32,4 +32,15 @@ script:
 
 after_success:
 - bash <(curl -s https://codecov.io/bash) -t 5b75b318-ab71-4fbc-9203-bfa7765cdbdc
-- sbt ++$TRAVIS_SCALA_VERSION orgAfterCISuccess
+- if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
+    if grep -q "SNAPSHOT" version.sbt; then
+      sbt ++$TRAVIS_SCALA_VERSION publish;
+    else
+      sbt ++$TRAVIS_SCALA_VERSION orgUpdateDocFiles;
+      git reset --hard HEAD;
+      git clean -f;
+      git checkout master;
+      git pull origin master;
+      sbt ++$TRAVIS_SCALA_VERSION release;
+    fi
+  fi
