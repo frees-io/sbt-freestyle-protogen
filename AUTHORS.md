@@ -8,5 +8,6 @@ The maintainers of the project are:
 
 ## Contributors
 
-These are the people that have contributed to the freestyle-rpc-protogen project:
+These are the people that have contributed to the sbt-frees-protogen project:
 
+* Juan Pedro Moreno <[juanpedromoreno](https://github.com/juanpedromoreno)>
