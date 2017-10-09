@@ -1,5 +1,12 @@
 # Changelog
 
+## 10/09/2017 - Version 0.0.5
+
+Release changes:
+
+* Releases 0.0.5 ([#3](https://github.com/frees-io/sbt-frees-protogen/pull/3))
+
+
 ## 10/09/2017 - Version 0.0.4
 
 Release changes:
