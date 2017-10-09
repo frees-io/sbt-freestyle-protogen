@@ -13,8 +13,8 @@ lazy val root = project
 
 lazy val plugin = project
   .in(file("plugin"))
-  .settings(moduleName := "sbt-frees-protogen")
   .dependsOn(core)
+  .settings(moduleName := "sbt-frees-protogen")
   .settings(sbtPlugin := true)
   .settings(scalacOptions := Seq("-deprecation", "-encoding", "UTF-8", "-feature", "-unchecked"))
   .settings(
