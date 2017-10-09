@@ -6,7 +6,7 @@ pgpSecretRing := file(s"$gpgFolder/secring.gpg")
 
 lazy val root = project
   .in(file("."))
-  .settings(name := "sbt-frees-protogen")
+  .settings(name := "sbt-freestyle-protogen")
   .settings(noPublishSettings)
   .dependsOn(plugin, core)
   .aggregate(plugin, core)
