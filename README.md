@@ -24,8 +24,6 @@ addSbtPlugin("io.frees" % "sbt-frees-protogen" % "0.0.2")
 
 [comment]: # (End Replace)
 
-By default, this plugin will inject `frees-rpc` dependency.
-
 ## Demo
 
 See [freestyle-rpc-examples repo](https://github.com/frees-io/freestyle-rpc-examples).
