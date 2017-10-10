@@ -1,5 +1,12 @@
 # Changelog
 
+## 10/10/2017 - Version 0.0.8
+
+Release changes:
+
+* Fix/plugin providing needed resolvers ([#4](https://github.com/frees-io/sbt-freestyle-protogen/pull/4))
+
+
 ## 10/09/2017 - Version 0.0.7
 
 Release changes:
