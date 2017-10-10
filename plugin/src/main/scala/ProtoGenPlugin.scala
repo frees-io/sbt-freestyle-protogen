@@ -40,14 +40,6 @@ object ProtoGenPlugin extends AutoPlugin {
 
   import autoImport._
 
-  lazy val thisBuildSettings: Seq[Def.Setting[_]] = Seq(
-    resolvers ++= Seq(
-      Resolver.sonatypeRepo("snapshots"),
-      Resolver.sonatypeRepo("releases"),
-      Resolver.bintrayRepo("beyondthelines", "maven")
-    )
-  )
-
   lazy val defaultSettings: Seq[Def.Setting[_]] = Seq(
     protoGenSourceDir := baseDirectory.value / "src" / "main" / "scala",
     protoGenTargetDir := baseDirectory.value / "src" / "main" / "proto"
@@ -69,6 +61,5 @@ object ProtoGenPlugin extends AutoPlugin {
     }
   )
 
-  override def projectSettings: Seq[Def.Setting[_]] =
-    thisBuildSettings ++ defaultSettings ++ protoGenTaskSettings
+  override def projectSettings: Seq[Def.Setting[_]] = defaultSettings ++ protoGenTaskSettings
 }

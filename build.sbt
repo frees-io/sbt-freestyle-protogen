@@ -32,4 +32,4 @@ lazy val core = project
   .in(file("core"))
   .settings(moduleName := "frees-protogen-core")
   .settings(scalaMetaSettings: _*)
-  .settings(libraryDependencies += "io.frees" %% "frees-rpc" % "0.0.6")
+  .settings(libraryDependencies += "io.frees" %% "frees-rpc-common" % "0.0.7")
