@@ -32,4 +32,11 @@ lazy val core = project
   .in(file("core"))
   .settings(moduleName := "frees-protogen-core")
   .settings(scalaMetaSettings: _*)
-  .settings(libraryDependencies += "io.frees" %% "frees-rpc-common" % "0.0.7")
+  .settings(
+    libraryDependencies ++= Seq(
+      "io.frees" %% "frees-rpc-common" % "0.0.7",
+      %%("cats-core"),
+      %%("scalameta-contrib", "1.8.0"),
+      %%("simulacrum")
+    )
+  )
