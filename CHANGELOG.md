@@ -1,5 +1,12 @@
 # Changelog
 
+## 10/10/2017 - Version 0.0.9
+
+Release changes:
+
+* Depends only on necessary code (common artifact) ([#5](https://github.com/frees-io/sbt-freestyle-protogen/pull/5))
+
+
 ## 10/10/2017 - Version 0.0.8
 
 Release changes:
