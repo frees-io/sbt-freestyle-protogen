@@ -16,6 +16,7 @@
 
 package freestyle
 
+import freestyle.rpc.protocol._
 import sbt._
 import sbt.Keys._
 
@@ -61,5 +62,8 @@ object ProtoGenPlugin extends AutoPlugin {
     }
   )
 
-  override def projectSettings: Seq[Def.Setting[_]] = defaultSettings ++ protoGenTaskSettings
+  override def projectSettings: Seq[Def.Setting[_]] =
+    defaultSettings ++ protoGenTaskSettings ++ Seq(
+      libraryDependencies += "io.frees" %% "frees-protogen-core" % BuildInfo.version
+    )
 }
