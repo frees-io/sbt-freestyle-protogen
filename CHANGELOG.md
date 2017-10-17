@@ -1,5 +1,12 @@
 # Changelog
 
+## 10/17/2017 - Version 0.0.10
+
+Release changes:
+
+* Upgrades to freestyle 0.4.0. ([#6](https://github.com/frees-io/sbt-freestyle-protogen/pull/6))
+
+
 ## 10/10/2017 - Version 0.0.9
 
 Release changes:
