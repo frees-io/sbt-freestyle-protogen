@@ -10,6 +10,17 @@ lazy val root = project
   .settings(noPublishSettings)
   .dependsOn(plugin, core)
   .aggregate(plugin, core)
+  .settings(orgBadgeListSetting := List(
+    TravisBadge.apply,
+    CodecovBadge.apply,
+    ScalaLangBadge.apply,
+    LicenseBadge.apply,
+    // Gitter badge (owner field) can be configured with default value if we migrate it to the frees-io organization
+    { info =>
+      GitterBadge.apply(info.copy(owner = "47deg", repo = "freestyle"))
+    },
+    GitHubIssuesBadge.apply
+  ))
 
 lazy val plugin = project
   .in(file("plugin"))
@@ -22,17 +33,6 @@ lazy val plugin = project
   .settings(moduleName := "sbt-frees-protogen")
   .settings(sbtPlugin := true)
   .settings(scalacOptions := Seq("-deprecation", "-encoding", "UTF-8", "-feature", "-unchecked"))
-  .settings(orgBadgeListSetting := List(
-    TravisBadge.apply,
-    CodecovBadge.apply,
-    ScalaLangBadge.apply,
-    LicenseBadge.apply,
-    // Gitter badge (owner field) can be configured with default value if we migrate it to the frees-io organization
-    { info =>
-      GitterBadge.apply(info.copy(owner = "47deg", repo = "freestyle"))
-    },
-    GitHubIssuesBadge.apply
-  ))
 
 lazy val core = project
   .in(file("core"))
