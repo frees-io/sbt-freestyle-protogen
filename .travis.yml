@@ -31,7 +31,7 @@ script:
 - sbt ++$TRAVIS_SCALA_VERSION orgScriptCI
 
 after_success:
-- bash <(curl -s https://codecov.io/bash) -t 5b75b318-ab71-4fbc-9203-bfa7765cdbdc
+- bash <(curl -s https://codecov.io/bash)
 - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
     if grep -q "SNAPSHOT" version.sbt; then
       sbt ++$TRAVIS_SCALA_VERSION publish;
