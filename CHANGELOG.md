@@ -1,5 +1,12 @@
 # Changelog
 
+## 10/24/2017 - Version 0.0.12
+
+Release changes:
+
+* Downgrade to cats 0.9.0 for sbt plugin ([#13](https://github.com/frees-io/sbt-freestyle-protogen/pull/13))
+
+
 ## 10/24/2017 - Version 0.0.11
 
 Release changes:
