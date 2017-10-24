@@ -1,29 +1,16 @@
-import sbtorgpolicies.templates.badges._
-
 pgpPassphrase := Some(getEnvVar("PGP_PASSPHRASE").getOrElse("").toCharArray)
 pgpPublicRing := file(s"$gpgFolder/pubring.gpg")
 pgpSecretRing := file(s"$gpgFolder/secring.gpg")
 
 lazy val root = project
   .in(file("."))
-  .settings(name := "sbt-freestyle-protogen")
   .settings(noPublishSettings)
   .dependsOn(plugin, core)
   .aggregate(plugin, core)
-  .settings(orgBadgeListSetting := List(
-    TravisBadge.apply,
-    CodecovBadge.apply,
-    ScalaLangBadge.apply,
-    LicenseBadge.apply,
-    // Gitter badge (owner field) can be configured with default value if we migrate it to the frees-io organization
-    { info =>
-      GitterBadge.apply(info.copy(owner = "47deg", repo = "freestyle"))
-    },
-    GitHubIssuesBadge.apply
-  ))
 
 lazy val plugin = project
   .in(file("plugin"))
+  .aggregate(core)
   .dependsOn(core)
   .enablePlugins(BuildInfoPlugin)
   .settings(
@@ -40,7 +27,7 @@ lazy val core = project
   .settings(scalaMetaSettings: _*)
   .settings(
     libraryDependencies ++= Seq(
-      "io.frees" %% "frees-rpc-common" % "0.1.0",
+      %%("frees-rpc-common", "0.1.1"),
       %%("cats-core"),
       %%("scalameta-contrib", "1.8.0"),
       %%("simulacrum")
