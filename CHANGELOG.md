@@ -1,5 +1,14 @@
 # Changelog
 
+## 10/24/2017 - Version 0.0.11
+
+Release changes:
+
+* Cross versioned to sbt [0.13.16, 1.0.2] ([#9](https://github.com/frees-io/sbt-freestyle-protogen/pull/9))
+* Revert "Cross versioned to sbt [0.13.16, 1.0.2]" ([#10](https://github.com/frees-io/sbt-freestyle-protogen/pull/10))
+* Plugin Upgrade ([#11](https://github.com/frees-io/sbt-freestyle-protogen/pull/11))
+
+
 ## 10/17/2017 - Version 0.0.10
 
 Release changes:
