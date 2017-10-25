@@ -100,10 +100,11 @@ object encoders {
         override def encode(d: ProtoDefinitions): String =
           s"""${d.prelude}
              |
-             |${d.options.map(POM.encode).mkString("\n")}
+             |${d.options.map(POM.encode).mkString("\n").trim}
              |
-             |${d.messages.map(PEM.encode).mkString("\n")}
-             |${d.services.map(PES.encode).mkString("\n")}
+             |${d.messages.map(PEM.encode).mkString("\n").trim}
+             |
+             |${d.services.map(PES.encode).mkString("\n").trim}
            """.stripMargin
 
       }
