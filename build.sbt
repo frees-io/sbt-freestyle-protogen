@@ -11,7 +11,6 @@ lazy val root = project
 lazy val plugin = project
   .in(file("plugin"))
   .aggregate(core)
-  .dependsOn(core)
   .enablePlugins(BuildInfoPlugin)
   .settings(
     buildInfoKeys := Seq[BuildInfoKey](name, version, scalaVersion, sbtVersion),
@@ -28,8 +27,14 @@ lazy val core = project
   .settings(
     libraryDependencies ++= Seq(
       %%("frees-rpc-common", "0.1.1"),
-      %%("cats-core", "0.9.0"),
+      %%("cats-core"),
       %%("scalameta-contrib", "1.8.0"),
       %%("simulacrum")
     )
   )
+
+scriptedLaunchOpts := {
+  scriptedLaunchOpts.value ++ Seq("-Xmx1024M", "-Dplugin.version=" + version.value)
+}
+
+scriptedBufferLog := false

@@ -61,7 +61,7 @@ object ProtoCodeGen {
           ProtoAnnotationsProcessor[Try]
             .process(inputFile)
             .map {
-              case pd if pd.options.nonEmpty && pd.messages.nonEmpty && pd.services.nonEmpty =>
+              case pd if pd.options.nonEmpty || pd.messages.nonEmpty || pd.services.nonEmpty =>
                 val protoContents = ProtoEncoder[ProtoDefinitions].encode(pd)
                 val outputFile =
                   new File(output.toPath + "/" + inputFile.getName.replaceAll(".scala", ".proto"))
