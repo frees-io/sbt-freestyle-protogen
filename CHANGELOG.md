@@ -1,5 +1,13 @@
 # Changelog
 
+## 10/28/2017 - Version 0.0.13
+
+Release changes:
+
+* Upgrade to Cats 1.0.0 ([#15](https://github.com/frees-io/sbt-freestyle-protogen/pull/15))
+* Update to version 0.0.13 ([#20](https://github.com/frees-io/sbt-freestyle-protogen/pull/20))
+
+
 ## 10/24/2017 - Version 0.0.12
 
 Release changes:
