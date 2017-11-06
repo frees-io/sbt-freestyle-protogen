@@ -194,7 +194,8 @@ object model {
 
   final case class ProtoDefinitions(
       prelude: String = """|// This file has been automatically generated for use by
-                           |// sbt-frees-protogen plugin, from freestyle-rpc service definitions
+                           |// sbt-frees-protogen plugin, from frees-rpc service definitions.
+                           |// Read more at: http://frees.io/docs/rpc/
                            |
                            |syntax = "proto3";""".stripMargin,
       options: List[ProtoOption],
