@@ -1,5 +1,13 @@
 # Changelog
 
+## 11/14/2017 - Version 0.0.14
+
+Release changes:
+
+* Links to frees-rpc docs ([#22](https://github.com/frees-io/sbt-freestyle-protogen/pull/22))
+* Upgrades to frees-rpc-common 0.3.0 ([#23](https://github.com/frees-io/sbt-freestyle-protogen/pull/23))
+
+
 ## 10/28/2017 - Version 0.0.13
 
 Release changes:
