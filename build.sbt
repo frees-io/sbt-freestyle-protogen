@@ -26,7 +26,7 @@ lazy val core = project
   .settings(scalaMetaSettings: _*)
   .settings(
     libraryDependencies ++= Seq(
-      %%("frees-rpc-common", "0.1.1"),
+      %%("frees-rpc-common", "0.3.0"),
       %%("cats-core"),
       %%("scalameta-contrib", "1.8.0"),
       %%("simulacrum")
