@@ -1,3 +1,4 @@
+### Note: this project has been integrated into the [frees-rpc](https://github.com/frees-io/freestyle-rpc) codebase as `sbt-frees-rpc-idlgen`
 
 [comment]: # (Start Badges)
 
